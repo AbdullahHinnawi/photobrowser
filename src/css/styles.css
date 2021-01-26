@@ -1,0 +1,21 @@
+.container {
+    width:auto;
+    /*max-width: 2560px;*/
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.image-card{
+    padding:5px;
+    border-radius: 5px;
+}
+
+.image{
+   /* width: 100%;*/
+}
+
+
+
+
+
