@@ -47,6 +47,7 @@ npm start
 - Pagination
 - Responsive app
 - Deployment on Heroku
+- README.md file and a guidance for using locally
 
 ## Author:
 

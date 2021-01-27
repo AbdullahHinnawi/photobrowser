@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caad0d54-25d1-42ba-801d-0a776d7d036b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/allPhotos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/responsiveness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/singlePhoto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -92,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="138">
-                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <first_editor relative-caret-position="182">
+                <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -159,7 +155,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="201" />
     <option name="y" value="25" />
     <option name="width" value="1479" />
@@ -266,12 +262,12 @@
       <updated>1611669624637</updated>
       <workItem from="1611669627082" duration="31052000" />
       <workItem from="1611734427892" duration="8285000" />
-      <workItem from="1611744103945" duration="2903000" />
+      <workItem from="1611744103945" duration="3200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42240000" />
+    <option name="totallyTimeSpent" value="42537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="201" y="25" width="1479" height="973" extended-state="0" />
@@ -279,12 +275,12 @@
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.12247738" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12247738" />
       <window_info id="DB Browser" order="3" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.15985577" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.29927886" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="GitLabIntegration" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
@@ -426,8 +422,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <first_editor relative-caret-position="182">
+            <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
