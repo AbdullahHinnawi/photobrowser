@@ -28,11 +28,6 @@ export const Pagination = ({pageCount, handlePageClick}) => {
 
       </div>
 
-
-
-
-
-
   );
 };
 export default Pagination;

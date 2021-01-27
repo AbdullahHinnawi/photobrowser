@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import '../css/styles.css';
-import photoService from '../services/photoService';
 import Card from 'react-bootstrap/Card';
+import photoService from '../services/photoService';
+
 export const PhotoInfo = (props) => {
 
   const photoId = props.match.params.id;
@@ -11,12 +12,11 @@ export const PhotoInfo = (props) => {
   const [selected, setSelected] = useState([]);
 
   // get selected photo
-  useEffect( async () => {
-    await photoService.getPhotoById(photoId).then(result => {
-      setSelected(result);
-      console.log("Selected photo: ", result);
-    });
-  }, []);
+  useEffect(  () => {
+     photoService.getPhotoById(photoId).then(result => {
+       setSelected(result);
+    }).catch(error => console.log(error));
+  }, [photoId]);
 
 
   return (
@@ -26,7 +26,7 @@ export const PhotoInfo = (props) => {
         <Card  border="none" style={{ maxWidth:'600px', margin:'auto',borderRadius:"5px" }}>
           <Card.Img variant="top" src={selected.url} />
           <Card.Body>
-            <Card.Title>{selected.title}</Card.Title>
+            <Card.Title>{selected.title ? selected.title.toUpperCase() : selected.title}</Card.Title>
             <Card.Text>
               Album id: {selected.albumId}<br/>
               Id: {selected.id}

@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import photoService from '../services/photoService';
 import Photo from './Photo';
-
-
-
+import photoService from '../services/photoService';
 import '../css/styles.css';
 import Pagination from './Pagination';
+
+
 
 export const Gallery = () => {
 
@@ -16,44 +15,46 @@ export const Gallery = () => {
   const [pageCount, setPageCount] = useState(0);
 
 
-  useEffect(async () => {
-    const allItems = await photoService.getPhotos();
-    setCurrentItems(allItems.slice(offset, offset + pageLimit));
-    // set an integer value for the total number of pages
-    setPageCount(Math.ceil(allItems.length / pageLimit));
-  }, [offset]);
+  useEffect(() => {
+    photoService.getPhotos().then(result => {
+      const allItems = result;
+      console.log("allItems: ", allItems);
+      setCurrentItems(allItems.slice(offset, offset + pageLimit));
+      // set an integer value for the total number of pages
+      setPageCount(Math.ceil(allItems.length / pageLimit));
+    }).catch(error => console.log(error));
 
-
+  }, [offset,pageLimit]);
 
 
   const handlePageClick = (e) => {
-        const selectedPage = e.selected;
-        console.log(selectedPage);
-        // update offset state by adding 1 on each click
-        setOffset(selectedPage + 1);
+    const selectedPage = e.selected;
+    console.log(selectedPage);
+    // update offset state by adding 1 on each click
+    setOffset(selectedPage + 1);
 
-      };
+  };
 
-      return (
-          <div className="container">
+  return (
+      <div className="container">
 
-            <div className="grid-container">
+        <div className="grid-container">
 
-              {currentItems ? currentItems.map(item => {
-                    return (
-                        <Photo item={item}/>
-                    );
-                  }
-              ) : <h2>Loading...</h2>}
+          {currentItems ? currentItems.map(item => {
+                return (
+                    <Photo key={item.id} item={item}/>
+                );
+              }
+          ) : <h2 style={{textAlign:"center"}}>Loading...</h2>}
 
-            </div>
+        </div>
 
-            <Pagination pageCount={pageCount}
-                        handlePageClick={handlePageClick}/>
+        <Pagination pageCount={pageCount}
+                    handlePageClick={handlePageClick}/>
 
-          </div>
-      );
+      </div>
+  );
 
-    };
+};
 
 export default Gallery;
