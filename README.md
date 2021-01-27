@@ -4,6 +4,8 @@
 the photos form the home page and see more details about a certain photo by clicking on it.
 
 ### ✨ [Running version on Heroku](https://photobrowser-app.herokuapp.com/)
+> *Notice: Heroku puts the app to sleep after 30 minutes of inactivity. This means 
+that the app will take some time (about 5-10 seconds) to wake up again.
 
 ## Used technologies:
 - React
