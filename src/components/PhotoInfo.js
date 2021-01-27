@@ -11,20 +11,19 @@ export const PhotoInfo = (props) => {
   const [selected, setSelected] = useState([]);
 
   // get selected photo
-  useEffect(() => {
-    photoService.getPhotoById(photoId).then(result => {
+  useEffect( async () => {
+    await photoService.getPhotoById(photoId).then(result => {
       setSelected(result);
       console.log("Selected photo: ", result);
     });
   }, []);
 
 
-
   return (
 
-      <div style={{ padding:"10px",marginTop:'80px' }}>
+      <div style={{ padding:"15px",marginTop:'80px' }}>
 
-        <Card  border="none" style={{ maxWidth:'600px', margin:'auto' }}>
+        <Card  border="none" style={{ maxWidth:'600px', margin:'auto',borderRadius:"5px" }}>
           <Card.Img variant="top" src={selected.url} />
           <Card.Body>
             <Card.Title>{selected.title}</Card.Title>
