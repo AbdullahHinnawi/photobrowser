@@ -1,5 +1,4 @@
 import React from 'react';
-
 import NavigationBar from './components/NavigationBar';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {Gallery} from './components/Gallery';
